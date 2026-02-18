@@ -1,0 +1,23 @@
+h1 {
+    display:flex;
+    justify-content: center;
+}
+
+#sketchContain {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 16px 25px;
+    justify-content: center;
+    align-content: center;
+    gap: 1px;
+}
+
+.hovered {
+    background-color: black;
+    color: white;
+}
+
+.unhovered {
+    background-color: white;
+    color: black;
+}
