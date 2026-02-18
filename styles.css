@@ -10,12 +10,13 @@ button {
 }
 
 #sketchContain {
+    width: 95%;
+    height: 1000px;
+    max-height: 1000px;
     display: flex;
+    flex-grow: 1;
     flex-flow: row wrap;
-    margin: 16px 25px;
-    justify-content: center;
-    align-content: center;
-    gap: 1px;
+    margin: 16px auto;
 }
 
 .hovered {
