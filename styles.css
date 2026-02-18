@@ -3,6 +3,12 @@ h1 {
     justify-content: center;
 }
 
+button {
+    display: flex;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
 #sketchContain {
     display: flex;
     flex-flow: row wrap;
