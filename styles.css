@@ -15,7 +15,7 @@ button {
     max-height: 1000px;
     display: flex;
     flex-grow: 1;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     margin: 16px auto;
 }
 
