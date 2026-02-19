@@ -22,6 +22,7 @@ button {
 .hovered {
     background-color: black;
     color: white;
+    opacity: 0.1;
 }
 
 .unhovered {

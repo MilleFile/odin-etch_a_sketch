@@ -2,12 +2,21 @@ const sketchContainer = document.querySelector("div");
 
 const buttonSetter = document.querySelector("button");
 
+function randColor () {
+    let red = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    return `rgb(${red}, ${blue}, ${green})`;
+}
+
 function resetCanvas(boxCount=10) {
     if (boxCount > 100) {boxCount = 100};
     const removeRow = document.querySelectorAll("div.rowManager");
     for (let i = 0; i< removeRow.length;i++) {
         sketchContainer.removeChild(removeRow[i]);
     }
+
+
     for (let i=0; i < boxCount; i++) {
         let currentRow = document.createElement("div");
         currentRow.classList.add("rowManager");
@@ -27,6 +36,8 @@ function resetCanvas(boxCount=10) {
             tempDiv.addEventListener("mouseenter", () => {
                 tempDiv.classList.remove("unhovered");
                 tempDiv.classList.add("hovered");
+                tempDiv.style.opacity = Number(tempDiv.style.opacity) + 0.1;
+                tempDiv.style.backgroundColor = randColor();
             })
             currentRow.appendChild(tempDiv);
         }
